@@ -1,0 +1,36 @@
+phraseapp:
+  access_token: 8c5cce046be6327beca4eacfae8d2c8f727b714ff0bc35185e0bbbf7bfabcaaf
+  project_id: c03c0a40ef889691ab4cf72c96c2f2e4
+  file_format: laravel
+  push:
+    sources:
+    - file: ./lang/<locale_code>/<tag>.php
+  pull:
+    targets:
+    - file: ./resources/lang/<locale_code>/<tag>.php
+      params:
+        tag: attributes
+    - file: ./resources/lang/<locale_code>/<tag>.php
+      params:
+        tag: attributes_fieldset
+    - file: ./resources/lang/<locale_code>/<tag>.php
+      params:
+        tag: auth
+    - file: ./resources/lang/<locale_code>/<tag>.php
+      params:
+        tag: categories
+    - file: ./resources/lang/<locale_code>/<tag>.php
+      params:
+        tag: notifications
+    - file: ./resources/lang/<locale_code>/<tag>.php
+      params:
+        tag: pagination
+    - file: ./resources/lang/<locale_code>/<tag>.php
+      params:
+        tag: passwords
+    - file: ./resources/lang/<locale_code>/<tag>.php
+      params:
+        tag: strings
+    - file: ./resources/lang/<locale_code>/<tag>.php
+      params:
+        tag: validation
