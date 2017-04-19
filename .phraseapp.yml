@@ -1,6 +1,6 @@
 phraseapp:
   access_token: 8c5cce046be6327beca4eacfae8d2c8f727b714ff0bc35185e0bbbf7bfabcaaf
-  project_id: c03c0a40ef889691ab4cf72c96c2f2e4
+  project_id: cc02e9fbd6aa8937e423d18546b6aafa
   file_format: laravel
   push:
     sources:
