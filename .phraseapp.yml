@@ -4,33 +4,33 @@ phraseapp:
   file_format: laravel
   push:
     sources:
-    - file: ./lang/<locale_code>/<tag>.php
+    - file: ./resources/lang/<locale_code>/<tag>.php
   pull:
     targets:
-    - file: ./resources/lang/<locale_code>/<tag>.php
+    - file: ./resources/lang/<locale_code>/attributes.php
       params:
         tag: attributes
-    - file: ./resources/lang/<locale_code>/<tag>.php
+    - file: ./resources/lang/<locale_code>/attributes_fieldset.php
       params:
         tag: attributes_fieldset
-    - file: ./resources/lang/<locale_code>/<tag>.php
+    - file: ./resources/lang/<locale_code>/auth.php
       params:
         tag: auth
-    - file: ./resources/lang/<locale_code>/<tag>.php
+    - file: ./resources/lang/<locale_code>/categories.php
       params:
         tag: categories
-    - file: ./resources/lang/<locale_code>/<tag>.php
+    - file: ./resources/lang/<locale_code>/notifications.php
       params:
         tag: notifications
-    - file: ./resources/lang/<locale_code>/<tag>.php
+    - file: ./resources/lang/<locale_code>/pagination.php
       params:
         tag: pagination
-    - file: ./resources/lang/<locale_code>/<tag>.php
+    - file: ./resources/lang/<locale_code>/passwords.php
       params:
         tag: passwords
-    - file: ./resources/lang/<locale_code>/<tag>.php
+    - file: ./resources/lang/<locale_code>/strings.php
       params:
         tag: strings
-    - file: ./resources/lang/<locale_code>/<tag>.php
+    - file: ./resources/lang/<locale_code>/validation.php
       params:
         tag: validation
