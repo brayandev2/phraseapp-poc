@@ -1,10 +1,14 @@
 phraseapp:
-  access_token: 8c5cce046be6327beca4eacfae8d2c8f727b714ff0bc35185e0bbbf7bfabcaaf
-  project_id: cc02e9fbd6aa8937e423d18546b6aafa
+  access_token: 44a76b19f162352ae83b5207c20f4d6ef677298c0e2b459423c56cdc1d85a244
+  project_id: 7ff9ad61b8936458dbea3244321f18f0
   file_format: laravel
   push:
     sources:
     - file: ./resources/lang/<locale_code>/<tag>.php
+      params:
+        update_translations: true
+        update_descriptions: true
+
   pull:
     targets:
     - file: ./resources/lang/<locale_code>/attributes.php
@@ -34,3 +38,6 @@ phraseapp:
     - file: ./resources/lang/<locale_code>/validation.php
       params:
         tag: validation
+    - file: ./resources/lang/<locale_code>/structures.php
+      params:
+        tag: structures
